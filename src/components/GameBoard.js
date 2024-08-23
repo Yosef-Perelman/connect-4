@@ -1,9 +1,10 @@
 import React from "react";
 import GameCircle from "./GameCircle";
+import '../Game.css';
 
 const GameBoard = () => {
-    return <div>
-        <GameCircle />
+    return <div className="gameBoard">
+        <GameCircle id={1}/>
     </div>
 }
 

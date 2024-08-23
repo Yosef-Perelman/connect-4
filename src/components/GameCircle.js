@@ -1,8 +1,10 @@
 import React from "react";
+import '../Game.css';
 
-const GameCircle = () => {
+const GameCircle = ({id}) => {
+    console.log(id);
     return (
-        <div>
+        <div className="gameCircle">
             GameCircle
         </div>
     )
