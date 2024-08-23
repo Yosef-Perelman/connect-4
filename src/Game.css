@@ -4,10 +4,10 @@ body {
 
 .app-container {
     width: 800px;
-    height: 550px;
+    height: 400px;
     position: absolute;
     left: 50%;
-    margin-left: -400px;
+    transform: translateX(-50%);
 }
 
 .gameBoard {
@@ -16,24 +16,23 @@ body {
     grid-template-rows: repeat(6, 1fr);
     padding: 20px;
     width: 520px;
-    position: absolute;
-    left: 50%;
-    margin-left: -260px;
+    margin: 0 auto; /* Center the game board */
     align-items: center;
     top: 10%;
     background-color: bisque;
     border: 8px solid burlywood;
     border-radius: 8%;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    position: relative; /* Make the game board position relative */
 }
 
 .header {
     position: absolute;
+    top: 7%; /* Position the header at the center of the game board vertically */
     left: 50%;
-    top: 5%; /* Position the header just above the game board */
     width: 200px; /* Adjust width to match the game board */
     height: 40px;
-    margin-left: -100px; /* Center the header horizontally */
+    transform: translateX(-50%) translateY(-25%); /* Center the header horizontally and adjust top position */
     background-color: lightgoldenrodyellow;
     border: 8px solid burlywood;
     border-radius: 8px;
@@ -55,7 +54,7 @@ body {
 .new-game-button {
     position: absolute;
     left: 50%; /* Center horizontally relative to the viewport */
-    top: calc(10% + 470px); /* Position below the game board */
+    /*bottom: 50%; /* Position the button at the center of the game board vertically */
     width: 100px; /* Set a fixed width */
     height: 100px; /* Set a fixed height */
     padding: 10px;
@@ -70,14 +69,13 @@ body {
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: background-color 0.3s, box-shadow 0.3s;
-    transform: translateX(-50%); /* Center the button horizontally */
+    transform: translateX(-50%) translateY(25%); /* Center the button horizontally and adjust bottom position */
 }
 
 .new-game-button:hover {
     background-color: #333; /* Slightly darker color on hover */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
-
 
 .gameCircle {
     width: 50px;
