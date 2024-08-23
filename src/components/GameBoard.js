@@ -1,6 +1,8 @@
 import React, {useState} from "react";
 import GameCircle from "./GameCircle";
 import '../Game.css';
+import Header from "./Header";
+import Footer from "./Footer";
 
 const NUMBER_OF_CIRCLES = 42;
 const NO_PLAYER = 0;
@@ -38,9 +40,15 @@ const GameBoard = () => {
         return <GameCircle key={id} id={id} className={`player_${gameBoard[id]}`} onCircleClicked={circleClicked}/>
     }
 
-    return <div className="gameBoard">
-       {initBoard()}
-    </div>
+    return (
+        <>
+            <Header/>
+            <div className="gameBoard">
+                {initBoard()}
+            </div>
+            <Footer/>
+        </>
+    )
 }
 
 export default GameBoard;
