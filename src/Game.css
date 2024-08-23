@@ -17,3 +17,15 @@
     margin: 10px;
     border-radius: 50%;
 }
+
+.noPlayer {
+    background-color: gray;
+}
+
+.player_1 {
+    background-color: red;
+}
+
+.player_2 {
+    background-color: green;
+}
