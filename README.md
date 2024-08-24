@@ -1,4 +1,5 @@
 # You can play the game here: https://coruscating-sorbet-8ff054.netlify.app/
+# or in ec2 here: http://98.82.11.189:3000/
 
 # Getting Started with Create React App
 
