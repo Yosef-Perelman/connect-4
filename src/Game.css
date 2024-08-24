@@ -98,9 +98,13 @@ body {
 }
 
 .player_1 {
-    background-color: red;
+    background-image: url('./assets/mta.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .player_2 {
-    background-color: green;
+    background-image: url('./assets/hta.png');
+    background-size: cover;
+    background-position: center;
 }

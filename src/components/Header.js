@@ -1,8 +1,10 @@
 import React from "react";
 
-const Header = ({ player, winner }) => {
+const Header = ({ player, winner, isDraw }) => {
     const getMessage = () => {
-        if (winner === 0) {
+        if (isDraw) {
+            return "It's a draw!";
+        } else if (winner === 0) {
             return `Player ${player}'s turn`;
         } else {
             return `Player ${winner} wins!`;
