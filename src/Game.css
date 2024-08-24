@@ -69,7 +69,7 @@ body {
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: background-color 0.3s, box-shadow 0.3s;
-    transform: translateX(-50%) translateY(25%); /* Center the button horizontally and adjust bottom position */
+    transform: translateX(-50%) translateY(15%); /* Center the button horizontally and adjust bottom position */
 }
 
 .new-game-button:hover {
@@ -83,6 +83,7 @@ body {
     margin: 10px;
     border-radius: 50%;
     border: 2px solid black;
+    cursor: pointer;
 }
 
 .panel {
