@@ -1,4 +1,4 @@
-# You can play the game here: https://effortless-torte-d3b5c0.netlify.app/
+# You can play the game here: https://coruscating-sorbet-8ff054.netlify.app/
 
 # Getting Started with Create React App
 
